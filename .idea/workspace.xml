@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb87c1a1-6c9b-439c-a2ca-dc0b90433010" name="Changes" comment="feat(): crear la clase customer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demoapp/AccessingDataJpaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/CustomerRepository.java" afterDir="false" />
+    <list default="true" id="bb87c1a1-6c9b-439c-a2ca-dc0b90433010" name="Changes" comment="feat(): borrar los otros proyectos para dejar el ejercicio 1">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/controller/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/controller/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demoapp/controller/WebController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demoapp/controller/WebController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demoapp/entity/PersonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +82,21 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DespedidaSpring" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DespedidaSpring" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccessingDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demoapp" />
+      <module name="DespedidaSpring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demoapp.AccessingDataJpaApplication" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +109,7 @@
       </method>
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demoapp" />
+      <module name="DespedidaSpring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demoapp.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,7 +144,7 @@
       <workItem from="1737367336372" duration="1334000" />
       <workItem from="1737374374966" duration="400000" />
       <workItem from="1737374784472" duration="1926000" />
-      <workItem from="1737535888058" duration="2675000" />
+      <workItem from="1737535888058" duration="3818000" />
     </task>
     <task id="LOCAL-00001" summary="feat(): crear la clase customer">
       <option name="closed" value="true" />
@@ -148,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737375958388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(): borrar los otros proyectos para dejar el ejercicio 1">
+      <option name="closed" value="true" />
+      <created>1737538879374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737538879374</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +170,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(): crear la clase customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(): crear la clase customer" />
+    <MESSAGE value="feat(): borrar los otros proyectos para dejar el ejercicio 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(): borrar los otros proyectos para dejar el ejercicio 1" />
   </component>
 </project>
