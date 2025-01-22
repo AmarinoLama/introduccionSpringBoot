@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>es.ua.mads</groupId>
-    <artifactId>demoapp</artifactId>
+    <artifactId>DespedidaSpring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demoapp</name>
 

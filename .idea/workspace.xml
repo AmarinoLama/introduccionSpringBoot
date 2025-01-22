@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb87c1a1-6c9b-439c-a2ca-dc0b90433010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/Customer.java" afterDir="false" />
+    <list default="true" id="bb87c1a1-6c9b-439c-a2ca-dc0b90433010" name="Changes" comment="feat(): crear la clase customer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demoapp/AccessingDataJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/controller/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/controller/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/entity/PersonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/controller/PersonForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoapp/HttpRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoapp/HttpRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/model/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demoapp/controller/WebController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demoapp/controller/WebController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demoapp/entity/PersonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,10 @@
     &quot;accountId&quot;: &quot;94d2bbba-1871-4bfc-b738-dddca9b7026c&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -55,32 +62,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/a23amanlv/IdeaProjects/demoapp/src/main/resources/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccessingDataJpaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/a23amanlv/IdeaProjects/demoapp/src/main/resources/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\a23amanlv\IdeaProjects\demoapp\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="AccessingDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demoapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="demoapp.AccessingDataJpaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demoapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demoapp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demoapp.Application" />
@@ -88,6 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AccessingDataJpaApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -111,11 +137,25 @@
       <workItem from="1737120230285" duration="221000" />
       <workItem from="1737367336372" duration="1334000" />
       <workItem from="1737374374966" duration="400000" />
-      <workItem from="1737374784472" duration="400000" />
+      <workItem from="1737374784472" duration="1926000" />
+      <workItem from="1737535888058" duration="2675000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(): crear la clase customer">
+      <option name="closed" value="true" />
+      <created>1737375958388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737375958388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(): crear la clase customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(): crear la clase customer" />
   </component>
 </project>
